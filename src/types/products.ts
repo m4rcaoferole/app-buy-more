@@ -8,4 +8,5 @@ export interface IProduct {
 
 export interface ListProducts extends IProduct {
    products: IProduct[];
+   onClick: (product: number) => void;
 }

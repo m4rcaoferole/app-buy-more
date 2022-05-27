@@ -2,16 +2,26 @@ import cart from "../../assets/cart.svg"
 
 import "./styles.scss"
 
-export const Header = () => {
+export interface INumberCartProps {
+  quantityProduct?: number
+}
+
+export const Header = ({ quantityProduct }: INumberCartProps) => {
 
   return (
     <div className="container-header">
-      <h1>BuyMore</h1>
+      <div className="title-wrapper">
+        <h1>BuyMore</h1>
+      </div>
 
       <div className="cart-container">        
-          <img src={cart} alt="Carrinho de compras" />
-          <div className="circle-container">
-            3
+          <div className="cart-wrapper">
+            <img src={cart} alt="Carrinho de compras" />
+            <div 
+              className="circle-container"
+            >
+              {quantityProduct}
+            </div>
           </div>
       </div>
     </div>

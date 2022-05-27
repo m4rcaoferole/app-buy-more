@@ -1,25 +1,46 @@
 .container-header {
   display: flex;
-
-  h1 {
-    height: 87px;
-    color: #6f6f6f;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 72px;
+  
+  .title-wrapper {
+    position: relative;
     margin-bottom: 130px;
+    height: 87px;
+
+    h1 {
+      color: #6f6f6f;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 72px;
+    }
   }
 
   .cart-container {
-    margin-right: auto;
-
+    position: absolute;
+    left: 93.46%;
+    right: 2.31%;
+    top: 2.86%;
+    bottom: 90.6%;
+    
+    .cart-wrapper {
+      display: flex;
+      align-items: center;
+    }
+    
     img {
       position: absolute;
-      left: 93.46%;
-      right: 2.31%;
-      top: 2.86%;
-      bottom: 90.6%;
+      width: 73px;
+      height: 73px;
+    }
+
+    .circle-container {      
+      z-index: 1;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      
+      background-color: #fff;
+      text-align: center;
     }
   }
 }
