@@ -1,4 +1,5 @@
 import { IProduct } from "../../types/products";
+import cartmini from "../../assets/cartmini.svg"
 import "./styles.scss";
 
 export const ProductsList = ({
@@ -15,16 +16,28 @@ export const ProductsList = ({
         </div>
 
         <div className="content-container">
-          <div className="title-product">{title}</div>
-          <p>{description}</p>
-          <div className="value-product">
-            <span>****</span>
-            <div>R$ {price}</div>
+          <div  className="title-product">
+            <strong>
+              {title}
+            </strong>
+            <p>{description}</p>
           </div>
-          <div>
-            <button>Add Cart</button>
+
+          <div className="wrapper-container">
+            <div className="value-product">
+              <div>****</div>
+              <p>R$ {price}</p>
+            </div>
+
+            <div className="btn-container">
+              <button>
+                <img src={cartmini} alt="Carrinho do botão"/>
+                <span>Add Cart</span>
+              </button>
+            </div>
           </div>
         </div>
+        
       </div>
     </>
   );

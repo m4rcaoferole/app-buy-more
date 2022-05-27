@@ -1,0 +1,25 @@
+.container-header {
+  display: flex;
+
+  h1 {
+    height: 87px;
+    color: #6f6f6f;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    margin-bottom: 130px;
+  }
+
+  .cart-container {
+    margin-right: auto;
+
+    img {
+      position: absolute;
+      left: 93.46%;
+      right: 2.31%;
+      top: 2.86%;
+      bottom: 90.6%;
+    }
+  }
+}
